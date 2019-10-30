@@ -4,6 +4,6 @@
 Integrantes Del grupo
 =======================
 Guillermo Alejandro Cano
-
+Jhon Edison Bohorquez Martinez
 Pregunta 1:
 ------------
