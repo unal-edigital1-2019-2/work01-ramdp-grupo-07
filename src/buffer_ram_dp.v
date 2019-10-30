@@ -3,8 +3,8 @@
 // Company:
 // Engineer:
 //
-// Create Date:    13:34:31 10/22/2019
-// Design Name: 	 Ferney alberto Beltran Molina
+// Create Date:   
+// Design Name: 	
 // Module Name:    buffer_ram_dp
 // Project Name:
 // Target Devices:
