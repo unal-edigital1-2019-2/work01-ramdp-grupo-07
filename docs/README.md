@@ -32,8 +32,8 @@ Se tendra una captura de datos de la RAM de 262144bits
     
 El nombre del registro COM7 nos permite restablececer todos los registros  
 control comun 7  
-SCCB Restablece Registros si:
-0: sin cambios
+SCCB Restablece Registros si:  
+0: sin cambios  
 1: restablecer todos los registros a los valores predeterminados 
     
     
