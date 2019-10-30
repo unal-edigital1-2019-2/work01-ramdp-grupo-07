@@ -40,13 +40,13 @@ localparam NPOS = 2 ** AW; //-- Memoria
 
 //-- Lectura/escritura  de la memoria port 1
 always @(posedge clk) begin
-       if (regwrite == 1)
-             ram[addr_in] <= data_in;
+       if (regwrite == 1)  // -- sí regwrite esta en 1 escribe informacion en la ram para la posición addr_in de entrada
+             ram[addr_in] <= data_in; // -- data in representa el bus de datos de entrada escritos en la ram
 end
 
 //-- Lectura/escritura  de la memoria port 2
 always @(posedge clk) begin
-       if (regread == 1)
+       if (regread == 1) 
            data_out <= ram[addr_out];
 end
 
