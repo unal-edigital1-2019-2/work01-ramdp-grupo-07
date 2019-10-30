@@ -11,9 +11,10 @@ Jhon Edison Bohorquez Martinez
 
 ¿Definir cuál es el tamaño máximo de buffer de memoria que puede crear?, se recomienda leer las especificaciones de la FPGA que está usando cada grupo. La respuesta se debe dar en bytes.
 
-1.la FPGA  utilizada fue la Nexys 4. segun el datasheet la capicidad total de almacenamiento en memoria es de
+1.la FPGA  utilizada fue la Nexys 4. según el datasheet la capicidad total de almacenamiento en memoria es de
 4.860 Kbits equivalentes a 4´860.000 bits por lo tanto
 se utilizará la formula 2^(AW).DW =(0.4*4´860.000) ,lo que representa que utilizaremos el 40% de la memoria máxima de la placa para ocuparlos en la  memoria RAM de la camara , con DW=16 y despejando el valor de x obtenemos x=17 , lo cual nos da unos valores de AW=17 ;DW=16 que representan un tamaño de pantalla igual a
+320X240 pixeles =76800pixeles =1228800 bits lo que concuerda con el tamaño determinado para la memoria RAM.
 
 
 
