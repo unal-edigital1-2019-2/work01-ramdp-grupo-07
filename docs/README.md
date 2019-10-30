@@ -3,7 +3,7 @@
 
 Integrantes Del grupo
 =======================
-Guillermo Alejandro Cano
+Guillermo Alejandro Cano   
 Jhon Edison Bohorquez Martinez
 Pregunta 1:
 ------------
