@@ -58,3 +58,9 @@ RGB selectionar el Bit [1]:
 la camara tiene un total de 656 x 488 pixeles que pueden ser configurados 
 
     Habilitar el test de barra de colores
+El nombre del registro ESCALANDO XSC o ESCALANDO YSC nos permite Habilitar el test de barra  
+Patrón de prueba [0]: funciona con el patrón de prueba [1] patrón de prueba (SCALING_XSC [7], SCALING_YSC [7]):   
+00: sin salida de prueba  
+01: Desplazamiento "1"  
+10: barra de color de 8 barras  
+11: Fundido a barra de color gris  
