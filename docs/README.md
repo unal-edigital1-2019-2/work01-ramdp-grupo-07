@@ -40,7 +40,12 @@ SCCB Restablece Registros si:
 0: sin cambios  
 1: restablecer todos los registros a los valores predeterminados
 
-
     Habilitar el escalado
+El nombre del registro COM8 nos permite Habilitar el escalado  
+control comun 8
+Control Automático de Exposición(AEC) - Límite de tamaño de paso si:  
+0: el tamaño del paso está limitado al blanco vertical  
+1: tamaño de paso ilimitado
+
     Configurar el formato y el tamaño del pixel
     Habilitar el test de barra de colores
