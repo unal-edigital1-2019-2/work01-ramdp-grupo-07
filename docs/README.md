@@ -23,8 +23,10 @@ se utilizará la formula 2^(AW).DW =(0.4*4´860.000) ,lo que representa que util
 
 ¿Cuál formato y tamaño de imagen de la cámara OV7670 que se ajusta mejor al tamaño de memoria calculado en la pregunta 1?. Para ello revisar la hoja de datos de la cámara OV7670. Revisar el datasheet que se encuentra aquí
 teniendo en cuenta que se tiene:  
+AW=15  
+DW=8  
+Se tendra una captura de datos de la RAM de 262144bits
 
-La matriz de la camara cuenta con 640X480 pixeles de los cuales se tomara la  configuración de 320X240 que corresponde a 1/2 de la Matriz , la cual se configura por el Registro COM4 en 01 para BIT[5:4] 
 
 *Pregunta 3:*
 
@@ -33,7 +35,7 @@ La matriz de la camara cuenta con 640X480 pixeles de los cuales se tomara la  co
     Restablecer todos los registros
 
 El nombre del registro COM7 nos permite restablececer todos los registros  
-control comun 7  
+control comun 7; configuracion via SCCB (serial camera control bus)
 SCCB Restablece Registros si:  
 0: sin cambios  
 1: restablecer todos los registros a los valores predeterminados
@@ -46,4 +48,13 @@ Control Automático de Exposición(AEC) - Límite de tamaño de paso si:
 1: tamaño de paso ilimitado
 
     Configurar el formato y el tamaño del pixel
+    
+EL fomato de salida se puede configurar en el Registro COM7, permite elegir entre los siguietes:     
+CIF   selectionar el  Bit [4]:   
+QVGA selectionar el Bit [3]:   
+QCIF selectionar el  Bit [2]:  
+RGB selectionar el Bit [1]:   
+
+la camara tiene un total de 656 x 488 pixeles que pueden ser configurados 
+
     Habilitar el test de barra de colores
