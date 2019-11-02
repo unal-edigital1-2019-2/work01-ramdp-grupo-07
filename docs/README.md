@@ -48,14 +48,14 @@ Control Automático de Exposición(AEC) - Límite de tamaño de paso si:
 1: tamaño de paso ilimitado
 
     Configurar el formato y el tamaño del pixel
-    
+   
 EL fomato de salida se puede configurar en el Registro COM7, permite elegir entre los siguietes:     
 CIF   selectionar el  Bit [4]:   
 QVGA selectionar el Bit [3]:   
 QCIF selectionar el  Bit [2]:  
 RGB selectionar el Bit [1]:   
 
-la camara tiene un total de 656 x 488 pixeles que pueden ser configurados 
+la camara tiene un total de 656 x 488 pixeles que pueden ser configurados donde su menor configuración aceptada es RGB 565 - 16 bits por pixel es decir 320x240 pixeles. 
 
     Habilitar el test de barra de colores
 El nombre del registro ESCALANDO XSC o ESCALANDO YSC nos permite Habilitar el test de barra  
