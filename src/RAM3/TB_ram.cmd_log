@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 TB_ram.ngc TB_ram.ngd  
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 TB_ram.ngc TB_ram.ngd  
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 TB_ram.ngc TB_ram.ngd  
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 TB_ram.ngc TB_ram.ngd  
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 TB_ram.ngc TB_ram.ngd  
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 TB_ram.ngc TB_ram.ngd  
+xst -intstyle ise -ifn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.xst" -ofn "/home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 TB_ram.ngc TB_ram.ngd  

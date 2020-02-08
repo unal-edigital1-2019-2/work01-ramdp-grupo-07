@@ -1,0 +1,23 @@
+ISim log file
+Running: /home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/hp/Descargas/work01-ramdp-grupo-07-master/src/RAM3/TB_ram_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+el valor de memoria      0 =      x
+el valor de memoria      1 =      x
+el valor de memoria      2 =      x
+el valor de memoria      3 =      x
+el valor de memoria      4 =      x
+el valor de memoria      5 =      x
+el valor de memoria      6 =      x
+el valor de memoria      7 =      x
+el valor de memoria      8 =     x
+el valor de memoria      3 = 43695
+el valor de memoria      1 = 34370
+el valor de memoria      4 =  1281

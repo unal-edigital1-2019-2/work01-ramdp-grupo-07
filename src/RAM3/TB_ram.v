@@ -22,18 +22,23 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module TBram;
+module TB_ram;
 
 	// Inputs
 	reg clk;
-	reg [14:0] addr_in;
-	reg [7:0] data_in;
+	reg [16:0] addr_in;
+	reg [15:0] data_in;
 	reg regwrite;
-	reg [14:0] addr_out;
+	reg [16:0] addr_out;
 	reg regread;
 
 	// Outputs
-	wire [7:0] data_out;
+	wire [15:0] data_out;
+	
+	//Simulation registers
+	reg [4:0] DR;
+	reg [5:0] DG;
+	reg [4:0] DB;
 
 	// Instantiate the Unit Under Test (UUT)
 	buffer_ram_dp uut (
@@ -54,32 +59,84 @@ module TBram;
 		regwrite = 0;
 		addr_out = 0;
 		regread = 0;
+		
+		DR=0;
+		DG=0;
+		DB=0;
 
-		// Wait 100 ns for global reset to finish
-		#100;
-        regread=1;
-	  for (addr_out = 19100; addr_out < 19201; addr_out = addr_out + 1) begin
-			 
-			 #5 $display("el valor de memoria %d =  %d", addr_out,data_out) ;
-
-		  end 
-		  
-		  #10 
-		  addr_in=0;
-		  data_in=234;
-		  regwrite=1;
-		  
-		  #10 
-		  regwrite=0;
-		  addr_out=0;
-		  #1
-		  regread=1;
-		  $display("el valor de memoria %d =  %d", addr_out,data_out) ;
   // Adicionar las estimulos necesarios para simular la lectura y escritura de la memoria ram
-		//# 10 regread=1;
-	   
+		for (addr_out = 0; addr_out < 8; addr_out = addr_out + 1) begin
+			#5 $display("el valor de memoria %d =  %d", addr_out,data_out) ;
+		end 
+      
+		
+		//desactiva modo lectura 
+		#5
+		regread=0;
+		
+		#5		
+		//direccion de entrada
+		addr_in = 0;
+		//dato de entrada 
+		data_in = 16'haaaa;
+		// activa dato de escritura 
+		regwrite = 1;
+		
+		#10 //espera
+		// en la direccion 1
+		addr_in = 1;
+		// dato de entrada 
+		data_in = 16'h8642;
+		//activa el odo escritura
+		regwrite = 1;
+		
+		#10//espera 
+		// en la direccion 2
+		addr_in = 2;
+		// dato de entrada
+		data_in = 16'hffff; 
+		// activa el odo escritura 
+		regwrite = 1;
+
+	   #10//espera 
+		addr_in = 3;
+		// dato de entrada
+		data_in = 16'haaaf; 
+		// activa el odo escritura 
+		regwrite = 1;
+
+		
+		
+		//uestra el valor de la eoria direccion y el dato
+		#5 $display("el valor de memoria %d = %d", addr_out, data_out);
+		
+		#10
+		
+		//lee el dato de la direccion 3
+		addr_out = 3;
+		regread = 1;
+		
+		#5 $display("el valor de memoria %d = %d", addr_out, data_out);
+		
+		#10
+		//lee el dato de la direccion 1
+		addr_out = 1;
+		regread = 1;
+		
+		#5 $display("el valor de memoria %d = %d", addr_out, data_out);
+		
+		#10
+		
+		//lee el dato de la direccion 4
+		addr_out = 4;
+		regread = 1;
+		
+		#5 $display("el valor de memoria %d = %d", addr_out, data_out);
+		
+		#10
+		// desactiva lectura
+		regread = 0;
 
 	end
-	always #1 clk = ~clk ;
+  always #1 clk = ~clk;         
 endmodule
-
