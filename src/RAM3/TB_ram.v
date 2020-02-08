@@ -35,10 +35,6 @@ module TB_ram;
 	// Outputs
 	wire [15:0] data_out;
 	
-	//Simulation registers
-	reg [4:0] DR;
-	reg [5:0] DG;
-	reg [4:0] DB;
 
 	// Instantiate the Unit Under Test (UUT)
 	buffer_ram_dp uut (
@@ -60,12 +56,10 @@ module TB_ram;
 		addr_out = 0;
 		regread = 0;
 		
-		DR=0;
-		DG=0;
-		DB=0;
+		
 
   // Adicionar las estimulos necesarios para simular la lectura y escritura de la memoria ram
-		for (addr_out = 0; addr_out < 8; addr_out = addr_out + 1) begin
+		for (addr_out = 0; addr_out < 10; addr_out = addr_out + 1) begin
 			#5 $display("el valor de memoria %d =  %d", addr_out,data_out) ;
 		end 
       
