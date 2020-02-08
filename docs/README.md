@@ -23,9 +23,11 @@ se utilizará la formula 2^(AW).DW =(0.4*4´860.000) ,lo que representa que util
 
 ¿Cuál formato y tamaño de imagen de la cámara OV7670 que se ajusta mejor al tamaño de memoria calculado en la pregunta 1?. Para ello revisar la hoja de datos de la cámara OV7670. Revisar el datasheet que se encuentra aquí
 teniendo en cuenta que se tiene:  
-AW=15  
-DW=8  
-Se tendra una captura de datos de la RAM de 262144bits
+
+la cámara OV7670 tiene los formatos RGB555y RGB565, el formato RGB565 tiene una salida de 8 bits el cual completa un pixel utilizando 2 buses (5 bis rojo)  (6 bits verde) (5 bits azul)
+El tamaño que se utilizara es de 320x240  
+
+
 
 
 *Pregunta 3:*
